@@ -22,6 +22,7 @@ def chatgpt():
     )
     return completion['choices'][0]['message']['content']
 
+@app.route('/chatgpt')
 def askcode():
     args = request.args
     language =args.get("language")
