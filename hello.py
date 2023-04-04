@@ -26,7 +26,7 @@ def askcode():
     args = request.args
     language =args.get("language")
     content =args.get("message")
-    message = "Can you create a code in " + language +" that can" + content
+    message = "Can you create a code in " + language +" that can " + content
     print(message)
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
